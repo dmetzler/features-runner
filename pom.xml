@@ -1,6 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
 
   <groupId>org.features-runner</groupId>
   <artifactId>features-runner-parent</artifactId>
@@ -14,6 +21,37 @@
     <module>features-runner-web</module>
   </modules>
 
+  <url>http://code.google.com/a/eclipselabs.org/p/features-runner/</url>
+
+  <licenses>
+    <license>
+      <name>EPL</name>
+      <url>http://www.eclipse.org/legal/epl-v10.html</url>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
+  
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://features-runner.ci.cloudbees.com/</url>
+  </ciManagement>
+  
+  
+  <scm>
+    <url>https://code.google.com/a/eclipselabs.org/p/features-runner/</url>
+    <connection>scm:hg:https://code.google.com/a/eclipselabs.org/p/features-runner/</connection>
+  </scm>
+  
+  <developers>
+    <developer>
+      <id>dmetzler</id>
+      <name>Damien Metzler</name>
+      <email>damien.metzler@leroymerlin.fr</email>
+      <organization>Leroy Merlin</organization>
+      <timezone>GMT+1</timezone>      
+    </developer>
+  </developers>
+
   <build>
     <plugins>
       <plugin>
@@ -26,6 +64,21 @@
         </configuration>
       </plugin>
     </plugins>
+
+    <resources>
+      <resource>
+        <directory>${basedir}/src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+      <resource>
+        <directory>${basedir}</directory>
+        <targetPath>META-INF</targetPath>
+        <includes>
+          <include>LICENSE.html</include>
+          <include>NOTICE</include>
+        </includes>
+      </resource>
+    </resources>
   </build>
 
 

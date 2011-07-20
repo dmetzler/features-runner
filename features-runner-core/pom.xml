@@ -11,7 +11,7 @@
 
 	<artifactId>features-runner-core</artifactId>
 
-	<name>Features runner core</name>
+	<name>Features runner :: core</name>
 
 	<description>
 		JUnit runner that exposes a way to declare features in order to
