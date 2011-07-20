@@ -1,5 +1,20 @@
 package org.features.runner.web;
 
-public class GooglePage extends WebPage {
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
+public class GooglePage extends WebPage {
+	
+	@FindBy(name="q")
+	WebElement searchInput;
+	
+	@FindBy(name="btnK")
+	WebElement searchBtn;
+
+	public GoogleResultPage searchFor(String q) {
+		searchInput.clear();
+		searchInput.sendKeys(q);
+		searchBtn.click();
+		return getPage(GoogleResultPage.class);
+	}
 }

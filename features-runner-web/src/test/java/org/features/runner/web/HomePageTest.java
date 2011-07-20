@@ -26,5 +26,9 @@ public class HomePageTest {
 		assertThat(home,is(notNullValue()));
 	}
 	
-	
+	@Test
+	public void iCanSearch() throws Exception {
+		GoogleResultPage results = home.searchFor("features-runner");
+		assertThat(results.getNumberOfResults() > 0 , is(true));
+	}
 }
