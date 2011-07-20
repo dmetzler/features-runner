@@ -8,7 +8,7 @@ public class GooglePage extends WebPage {
 	@FindBy(name="q")
 	WebElement searchInput;
 	
-	@FindBy(name="btnK")
+	@FindBy(name="btnG")
 	WebElement searchBtn;
 
 	public GoogleResultPage searchFor(String q) {
