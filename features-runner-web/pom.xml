@@ -20,7 +20,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.features.runner</groupId>
+      <groupId>org.features-runner</groupId>
       <artifactId>features-runner-core</artifactId>
     </dependency>
 
