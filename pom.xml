@@ -40,6 +40,7 @@
   <scm>
     <url>https://code.google.com/a/eclipselabs.org/p/features-runner/</url>
     <connection>scm:hg:https://code.google.com/a/eclipselabs.org/p/features-runner/</connection>
+    <developerConnection>scm:hg:https://code.google.com/a/eclipselabs.org/p/features-runner/</developerConnection>
   </scm>
   
   <developers>
