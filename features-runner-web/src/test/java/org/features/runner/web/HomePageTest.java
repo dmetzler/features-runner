@@ -14,7 +14,7 @@ import com.google.inject.Inject;
 
 @RunWith(FeaturesRunner.class)
 @Features(WebDriverFeature.class)
-@Browser(type=BrowserFamily.CHROME)
+@Browser(type=BrowserFamily.HTML_UNIT)
 @HomePage(type=GooglePage.class,url="http://www.google.fr")
 public class HomePageTest {
 	
