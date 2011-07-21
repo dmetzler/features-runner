@@ -26,6 +26,7 @@
     <license>
       <name>EPL</name>
       <url>http://www.eclipse.org/legal/epl-v10.html</url>
+      <distribution>repo</distribution>
       <comments>A business-friendly OSS license</comments>
     </license>
   </licenses>
